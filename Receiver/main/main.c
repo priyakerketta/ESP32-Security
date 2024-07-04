@@ -1,34 +1,3 @@
-// #include <stdio.h>
-// #include "freertos/FreeRTOS.h"
-// #include "freertos/task.h"
-// #include "lora.h"
-
-// uint8_t buf[32];
-
-// void task_rx(void *p)
-// {
-//    int x;
-//    for(;;) {
-//       lora_receive();    // put into receive mode
-//       while(lora_received()) {
-//          x = lora_receive_packet(buf, sizeof(buf));
-//          buf[x] = 0;
-//          printf("Received: %s\n", buf);
-//          lora_receive();
-//       }
-//       vTaskDelay(1);
-//    }
-// }
-
-// void app_main()
-// {
-//    lora_init();
-//    lora_set_frequency(866e6);
-//    lora_enable_crc();
-//    xTaskCreate(&task_rx, "task_rx", 2048, NULL, 5, NULL);
-// }
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -42,13 +11,6 @@
 #define LORA_CRC_ENABLED true
 #define RX_TASK_STACK_SIZE 3072
 #define RX_TASK_PRIORITY 5
-
-// #define PIN_NUM_MISO 13
-// #define PIN_NUM_MOSI 2
-// #define PIN_NUM_CLK  14
-// #define PIN_NUM_CS   12
-// #define PIN_NUM_RST  15
-// #define PIN_NUM_DIO0 16
 
 static const char *TAG = "Lora_Decryption";
 
