@@ -1,25 +1,3 @@
-// #include <stdio.h>
-// #include "freertos/FreeRTOS.h"
-// #include "freertos/task.h"
-// #include "lora.h"
-
-// void task_tx(void *p)
-// {
-//    for(;;) {
-//       vTaskDelay(pdMS_TO_TICKS(5000));
-//       lora_send_packet((uint8_t*)"Hello", 5);
-//       printf("packet sent...\n");
-//    }
-// }
-
-// void app_main()
-// {
-//    lora_init();
-//    lora_set_frequency(866e6);
-//    lora_enable_crc();
-//    xTaskCreate(&task_tx, "task_tx", 2048, NULL, 5, NULL);
-// }
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,13 +12,6 @@
 #define TX_TASK_STACK_SIZE 3072
 #define TX_TASK_PRIORITY 5
 #define TX_DELAY_MS 5000
-
-// #define PIN_NUM_MISO 13
-// #define PIN_NUM_MOSI 2
-// #define PIN_NUM_CLK  14
-// #define PIN_NUM_CS   12
-// #define PIN_NUM_RST  15
-// #define PIN_NUM_DIO0 16
 
 static const char *TAG = "Lora_Encryption";
 
