@@ -1,0 +1,17 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.adapterTargetName": "esp32",
+    "idf.customExtraPaths": "/home/priya/.espressif/tools/xtensa-esp-elf-gdb/11.2_20220823/xtensa-esp-elf-gdb/bin:/home/priya/.espressif/tools/riscv32-esp-elf-gdb/11.2_20220823/riscv32-esp-elf-gdb/bin:/home/priya/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin:/home/priya/.espressif/tools/xtensa-esp32s2-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32s2-elf/bin:/home/priya/.espressif/tools/xtensa-esp32s3-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32s3-elf/bin:/home/priya/.espressif/tools/riscv32-esp-elf/esp-2021r2-patch5-8.4.0/riscv32-esp-elf/bin:/home/priya/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/priya/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin",
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "/home/priya/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts"
+    },
+    "idf.espIdfPath": "/home/priya/esp/v4.4/esp-idf",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32.cfg"
+    ],
+    "idf.pythonBinPath": "/home/priya/.espressif/python_env/idf4.4_py3.12_env/bin/python",
+    "idf.toolsPath": "/home/priya/.espressif",
+    "idf.flashType": "UART",
+    "idf.port": "/dev/ttyUSB1"
+}
